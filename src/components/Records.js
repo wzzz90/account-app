@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Record from './Record';
 import RecordForm from './RecordForm';
 import AmountBox from './AmountBox';
+import Calendar from './Calendar';
 import * as RecordsAPI from '../utils/RecordsAPI';
 
 class Records extends Component {
@@ -100,6 +101,7 @@ class Records extends Component {
         </div>
         <RecordForm init={this.loadData}/>
         {RecordsComponent}
+        <Calendar />
       </div>
     )
   }
